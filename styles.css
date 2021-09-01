@@ -1,0 +1,9 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+  
+}
