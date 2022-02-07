@@ -12,6 +12,7 @@
     />
     <script src="https://kit.fontawesome.com/6c9e1818c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -46,30 +47,31 @@
             </li>
         </ul>
       </nav>
+      <button onclick="handleTopScroll()" id="scroll-top"><i class="fas fa-chevron-up"></i></button>
     </header>
 
     <!-- Introduction-->
     <section class="intro" id="home">
 
-      <h1 class="section__title section__title--intro">
-        Ellie Redmayne
+      <h1 class="section__title section__title--intro" id="title-text">
+     
       </h1>
 
-      <h2 class="section__subtitle section__subtitle--intro"> 
-        Web Developer
+      <h2 class="section__subtitle section__subtitle--intro" id="subtitle-text"> 
+     
       </h2>
       <img src="https://pbs.twimg.com/profile_images/1433432296770588673/lTRrOeYC_400x400.jpg" alt="pixelated ellie" class="intro__img">
     </section>
 
     <!--About me-->
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Hey, thanks for dropping by 👋</h2>
-        <div class="about-container">
-        <div class="about-content">
+        <h2 class="section__title section__title--about" data-aos="fade-up">Hey, thanks for dropping by 👋</h2>
+        <div class="about-container" data-aos="fade-up">
+        <div class="about-content" data-aos="fade-up">
           <div class="about-img">
             <img src="https://pbs.twimg.com/profile_images/1433432296770588673/lTRrOeYC_400x400.jpg" alt="pixelated ellie" class="about-me__img">
           </div>
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-up">
             <p>I’m Ellie, a front end focussed developer based in Birmingham, UK.</p>
             <p>I completed the School of Code bootcamp in April 2021 and have been working as a front end dev ever since!</p>
             <p>I have since become a mentor for SoC and have also helped organise HackTheMidlands 6.0, which saw approx 300 people learn and share over a 24 hour hackathon.</p>
@@ -80,7 +82,7 @@
     </section>
 
        <!--Stack-->
-       <section class="my-stack" id="stack">
+       <section class="my-stack" id="stack" data-aos="fade-up">
           <div class="front-end-stack">
             <h4>Front End</h4>
             <ul>
@@ -120,10 +122,10 @@
 
         <!--My Work-->
         <section class="my--work" id="work">
-          <h2 class="section__title">My Work 👩‍💻</h2>
+          <h2 class="section__title" data-aos="fade-up">My Work 👩‍💻</h2>
           <p class="section__subtitle"></p>
 
-          <div class="portfolio">
+          <div class="portfolio" data-aos="fade-up">
             <a href="#" class="portfolio__item">
               <img src="https://pbs.twimg.com/profile_images/1433432296770588673/lTRrOeYC_400x400.jpg" alt="" class="portfolio__img">
             </a>
@@ -166,6 +168,7 @@
           </ul>
         </footer>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts.js">
     </script>
   </body>
